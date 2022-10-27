@@ -9,7 +9,7 @@ import {
   signOut,
 } from "firebase/auth";
 
-import { getStorege } from 'firebase/storage'
+import { getStorage } from 'firebase/storage'
 
 
 import {
