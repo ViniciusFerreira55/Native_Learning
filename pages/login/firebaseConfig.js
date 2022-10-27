@@ -8,6 +8,10 @@ import {
   sendPasswordResetEmail,
   signOut,
 } from "firebase/auth";
+
+import { getStorege } from 'firebase/storage'
+
+
 import {
   getFirestore,
   query,
@@ -25,7 +29,9 @@ const firebaseConfig = {
     appId: "1:401558130109:web:c736fd933935d2aef956d4",
     measurementId: "G-RQC78NPTZW"
   };
+
 const app = initializeApp(firebaseConfig);
+const storage = getStorage(app) 
 const auth = getAuth(app);
 const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
@@ -91,4 +97,5 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
+  storage,
 };
