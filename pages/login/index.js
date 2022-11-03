@@ -43,6 +43,7 @@ export default function Login({navigation}){
                     <TextInput
                         style={styles.txtInput}
                         placeholder='Password'   
+                        secureTextEntry={true}
                         keyboardType='password' 
                         value={password}
                         onChangeText={(p)=>{setPassword(p)}}               
