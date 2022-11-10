@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const {width, height} = Dimensions.get('window')
 
 const styles = StyleSheet.create({
     container:{
@@ -31,21 +33,36 @@ const styles = StyleSheet.create({
         color: '#DDD',
     },
     pageLista:{
-        width:'90%',
-        flexDirection:'row',
         marginTop:10,
-
+        width: width/2.5,
+        height: height/4,
+        borderRadius:10,
+        margin:6,
+        padding:5,
     },
     txtLista:{
         width:150,
         height:30,
         alignContent:'flex-start',
-        backgroundColor:'#eee',
-        borderRadius:5,
         color:'#444',
         fontSize:12,
         padding:5,
     },
+    foto20:{
+        padding:10,
+        alignItems:'center',
+        backgroundColor:'#eee',
+        borderRadius:10,
+
+    },
+    foto30:{
+        width:width/4,
+        height:height/10,
+        backgroundColor:'#5f5',
+        alignItems:'center',
+        justifyContent:'center',
+        borderRadius:10,
+    }
 })
 
 export default styles

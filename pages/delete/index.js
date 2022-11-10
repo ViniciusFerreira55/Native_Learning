@@ -62,6 +62,7 @@ export default function Delete({navigation}){
                             onPress={()=>{
                                 navigation.navigate("Update", {
                                     id: item.id,
+                                    name: item.name,
                                     email: item.email
                                 })
                             }}
