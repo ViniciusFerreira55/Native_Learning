@@ -20,7 +20,6 @@ export default function Delete({navigation}){
         querySnapshot.forEach((doc)=>{
             list.push({...doc.data(), id: doc.id})
         });
-
         setPage(list)
     },[])
 
@@ -50,7 +49,8 @@ export default function Delete({navigation}){
                                 navigation.navigate("Update", {
                                     id: item.id,
                                     name: item.name,
-                                    email: item.email
+                                    email: item.email,
+                                    image: item.image
                                 })
                             }}
                         >
@@ -63,7 +63,8 @@ export default function Delete({navigation}){
                                 navigation.navigate("Update", {
                                     id: item.id,
                                     name: item.name,
-                                    email: item.email
+                                    email: item.email,
+                                    image: item.image
                                 })
                             }}
                         >

@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const {width, height} = Dimensions.get('window')
 
 const styles = StyleSheet.create({
     container:{
@@ -30,6 +32,22 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: '#DDD',
     },
+    foto20:{
+        padding:10,
+        alignItems:'center',
+        backgroundColor:'#eee',
+        borderRadius:10,
+
+    },
+    foto30:{
+        width:width/4,
+        height:height/10,
+        backgroundColor:'#5f5',
+        alignItems:'center',
+        justifyContent:'center',
+        borderRadius:10,
+    }
+
 })
 
 export default styles
